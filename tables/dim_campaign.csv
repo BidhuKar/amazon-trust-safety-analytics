@@ -1,0 +1,4 @@
+campaign_id,launch_ts,campaign_type,message_template,target_segment
+CMP01,2025-11-20 07:00:00,email_warning,Beware of fake Black Friday deals pretending to be us.,high
+CMP02,2025-11-24 09:00:00,in_app_banner,Never enter your password after clicking on a link.,medium
+CMP03,2025-11-26 10:00:00,email_warning,Look carefully at the sender address before acting on messages.,low

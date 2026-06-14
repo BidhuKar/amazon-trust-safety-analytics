@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Trust & Safety Phishing Analytics Portfolio</title>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=boska@500,700&display=swap" rel="stylesheet">
+<style>
+:root{--text-sm:clamp(.875rem,.8rem+.35vw,1rem);--text-base:clamp(1rem,.95rem+.25vw,1.125rem);--text-lg:clamp(1.125rem,1rem+.75vw,1.5rem);--text-xl:clamp(1.5rem,1.2rem+1.25vw,2.25rem);--text-2xl:clamp(2rem,1.2rem+2.5vw,3.5rem);--space-2:.5rem;--space-4:1rem;--space-6:1.5rem;--space-8:2rem;--space-12:3rem;--space-16:4rem;--color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;--color-border:#d4d1ca;--color-text:#28251d;--color-text-muted:#7a7974;--color-primary:#01696f;--radius-md:.5rem;--radius-lg:.75rem;--shadow-sm:0 1px 2px rgba(0,0,0,.06);--shadow-md:0 8px 24px rgba(0,0,0,.08);--font-body:'Satoshi',sans-serif;--font-display:'Boska',serif;}
+[data-theme="dark"]{--color-bg:#171614;--color-surface:#1c1b19;--color-surface-2:#201f1d;--color-border:#393836;--color-text:#cdccca;--color-text-muted:#979592;--color-primary:#4f98a3;--shadow-sm:0 1px 2px rgba(0,0,0,.2);--shadow-md:0 8px 24px rgba(0,0,0,.35);}
+*{box-sizing:border-box} body{margin:0;font-family:var(--font-body);font-size:var(--text-base);background:var(--color-bg);color:var(--color-text);line-height:1.6} a{color:var(--color-primary)} .wrap{max-width:1100px;margin:auto;padding:0 var(--space-4)} header{padding:var(--space-6) 0;border-bottom:1px solid var(--color-border);position:sticky;top:0;background:color-mix(in srgb,var(--color-bg) 88%, transparent);backdrop-filter:blur(8px)} .brand{display:flex;justify-content:space-between;align-items:center} .logo{display:flex;gap:.75rem;align-items:center;font-weight:700} .logo svg{width:34px;height:34px} .hero{padding:var(--space-16) 0 var(--space-12)} h1,h2,h3{font-family:var(--font-display);line-height:1.1} h1{font-size:var(--text-2xl);max-width:11ch;margin:0 0 var(--space-4)} h2{font-size:var(--text-xl);margin:0 0 var(--space-4)} p.lead{max-width:70ch;color:var(--color-text-muted)} .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--space-6)} .card{grid-column:span 4;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6);box-shadow:var(--shadow-sm)} .card.wide{grid-column:span 12} .kpi{font-size:var(--text-xl);font-weight:700;font-family:var(--font-body)} .section{padding:var(--space-12) 0} .chart-grid{display:grid;grid-template-columns:1fr;gap:var(--space-6)} .chart-grid img{width:100%;border-radius:var(--radius-lg);border:1px solid var(--color-border);background:var(--color-surface-2)} code,pre{background:var(--color-surface-2);border:1px solid var(--color-border);border-radius:var(--radius-md)} pre{padding:var(--space-4);overflow:auto} ul{padding-left:1.2rem} button{border:1px solid var(--color-border);background:var(--color-surface);padding:.7rem .9rem;border-radius:999px} @media (max-width: 900px){.card,.card.wide{grid-column:span 12}}
+</style>
+</head>
+<body>
+<header><div class="wrap brand"><div class="logo"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-label="logo"><path d="M10 20h44v8H10z"/><path d="M18 32h28v20H18z"/><path d="M32 12v40"/></svg><span>Trust & Safety Portfolio</span></div><button data-theme-toggle aria-label="Switch theme">◐</button></div></header>
+<main class="wrap">
+<section class="hero"><p>Case study</p><h1>Phishing, account takeover, and fraud analytics</h1><p class="lead">This project uses a synthetic event dataset designed to mimic real Trust & Safety behavior patterns. I cleaned multi-table event data, standardized timestamps and keys, built SQL analyses, ran Python EDA, visualized attack dynamics, and translated findings into practical risk recommendations.</p></section>
+<section class="section"><h2>Project framing</h2><div class="grid"><article class="card"><h3>Objective</h3><p>Measure how phishing activity propagates from outbound messages to risky interactions, customer impact, and security incidents.</p></article><article class="card"><h3>Honest positioning</h3><p>This is a synthetic but behaviorally realistic dataset, not scraped public consumer data. The value is the analytical workflow and Trust & Safety reasoning.</p></article><article class="card"><h3>Stack</h3><p>SQL, Python, pandas, Plotly, data cleaning, integrity checks, stakeholder-style recommendations.</p></article></div></section>
+<section class="section"><h2>Data preparation</h2><div class="grid"><article class="card"><div class="kpi">8</div><p>Final cleaned tables used in the project.</p></article><article class="card"><div class="kpi">2025</div><p>Analysis window enforced to keep the project timeline coherent.</p></article><article class="card"><div class="kpi">RI</div><p>Referential-integrity filtering removed orphan keys before analysis.</p></article><article class="card wide"><p>Cleaning steps included column normalization, datetime parsing, boolean standardization, duplicate removal, timeline cutoff enforcement, and cross-table key validation between customers, campaigns, messages, interactions, orders, logins, and incidents.</p></article></div></section>
+<section class="section"><h2>Charts</h2><div class="chart-grid"><img src="attack_volume_incidents.png" alt="Attack volume vs incidents chart" width="1200" height="700" loading="lazy"><img src="incident_rate_by_risk.png" alt="Incident rate by risk segment chart" width="1200" height="700" loading="lazy"><img src="country_profile.png" alt="Country profile chart" width="1200" height="700" loading="lazy"></div></section>
+<section class="section"><h2>SQL examples</h2><pre><code>-- Trust &amp; Safety portfolio project SQL
+-- Load cleaned CSVs into your warehouse as tables with matching names.
+
+-- 1) Daily phishing message volume
+SELECT DATE(received_ts) AS event_date, COUNT(*) AS messages_sent
+FROM fact_phishing_messages_clean
+GROUP BY 1
+ORDER BY 1;
+
+-- 2) Daily incidents
+SELECT DATE(incident_ts) AS event_date, COUNT(*) AS incidents
+FROM fact_security_incidents_clean
+GROUP BY 1
+ORDER BY 1;
+
+-- 3) Incident rate by customer risk segment
+WITH incident_customers AS (
+  SELECT DISTINCT customer_id
+  FROM fact_security_incidents_clean
+)
+SELECT c.risk_segment,
+       COUNT(DISTINCT c.customer_id) AS customers,
+       COUNT(DISTINCT i.customer_id) AS incident_customers,
+       1.0 * COUNT(DISTINCT i.customer_id) / COUNT(DISTINCT c.customer_id) AS incident_rate
+FROM dim_customer_clean c
+LEFT JOIN incident_customers i
+  ON c.customer_id = i.customer_id
+GROUP BY 1
+ORDER BY incident_rate DESC;
+
+-- 4) Campaign engagement
+SELECT e.campaign_id,
+       COUNT(*) AS exposures,
+       AVG(CASE WHEN e.viewed THEN 1 ELSE 0 END) AS view_rate,
+       AVG(CASE WHEN e.clicked_learn_more THEN 1 ELSE 0 END) AS learn_more_rate
+FROM fact_campaign_exposure_clean e
+GROUP BY 1
+ORDER BY exposures DESC;
+
+-- 5) Country-level gross order value
+SELECT c.country,
+       SUM(o.order_amount) AS gross_order_value,
+       COUNT(*) AS orders
+FROM fact_orders_clean o
+JOIN dim_customer_clean c
+  ON o.customer_id = c.customer_id
+GROUP BY 1
+ORDER BY gross_order_value DESC;
+</code></pre></section>
+<section class="section"><h2>Recommendations</h2><div class="grid"><article class="card"><h3>Prioritize high-risk cohorts</h3><p>High-risk customer segments should receive stricter friction, proactive messaging, and faster incident review because downstream harm concentrates there.</p></article><article class="card"><h3>Use wave-based detection</h3><p>Message spikes and incident spikes should be monitored together. A campaign-volume surge without response controls can become downstream account compromise.</p></article><article class="card"><h3>Focus on conversion points</h3><p>The most useful intervention points are clicks and credential submission moments, not just raw message counts.</p></article></div></section>
+</main>
+<script>
+(function(){const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';r.setAttribute('data-theme',d);t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);})})();
+</script>
+</body></html>

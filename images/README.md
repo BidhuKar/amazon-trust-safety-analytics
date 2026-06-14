@@ -1,0 +1,1 @@
+Save ERD diagrams, architecture diagrams, and dashboard images here.

@@ -1,0 +1,5 @@
+campaign_id,launch_ts,campaign_type,message_template,target_segment
+CMP01,2025-11-01 07:00:00,email_warning,Seasonal scams are rising. Verify sender addresses and avoid links.,high
+CMP02,2025-11-20 09:00:00,in_app_banner,Never enter your password after clicking a message link. Use the app.,medium
+CMP03,2025-12-05 08:30:00,sms_alert,ShopHub: Beware of refund scams. We never ask for card details via link.,all
+CMP04,2025-11-24 06:30:00,email_warning,Black Friday warning: fake order confirmations are circulating.,high
