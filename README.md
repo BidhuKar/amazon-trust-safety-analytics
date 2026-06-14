@@ -1,10 +1,10 @@
-TrustSight Analytics — Trust & Safety abuse intelligence
+## TrustSight Analytics — Trust & Safety abuse intelligence
 
-Overview
+## Overview
 
 I created TrustSight Analytics to show how a retailer-style Trust & Safety dataset can be assembled, analyzed, and presented. I used synthetic customer, phishing, login, order and incident records to model a phishing wave and downstream security impact, then built a small analysis pipeline that turns raw CSVs into feature tables, anomaly scores, and risk scores.
 
-What this repo contains
+## What this repo contains
 
 I kept the project organized so the artifacts are easy to follow:
 
@@ -17,7 +17,7 @@ I kept the project organized so the artifacts are easy to follow:
 - `requirements.txt` pins the reproducible Python environment for this project.
 - `output/` stores the generated artifacts produced by the Python workflow.
 
-What I built
+## What I built
 
 I focused this project on a few concrete outputs:
 
@@ -29,7 +29,7 @@ I focused this project on a few concrete outputs:
 - notebook walkthroughs that document the pipeline and attribution analysis
 - a portfolio page that showcases the visuals, narrative, and SQL evidence together
 
-How to run the project
+## How to run the project
 
 From the repo root, I recommend these steps:
 
@@ -61,19 +61,19 @@ From the repo root, I recommend these steps:
    python -m notebook
    # then open notebooks/01_data_pipeline_walkthrough.ipynb and notebooks/02_analysis_and_visualization.ipynb
 
-What the scripts do
+## What the scripts do
 
 - `python/data_preparation.py` loads the raw CSV tables, normalizes timestamps, joins data into customer-level aggregates, and saves `output/features/customer_features.csv`.
 - `python/anomaly_detection.py` loads login events, encodes simple features, trains an `IsolationForest`, and saves `output/anomalies/login_anomalies.csv`.
 - `python/risk_scoring.py` loads the customer features, computes a weighted score, buckets customers into risk tiers, and saves `output/scores/customer_risk_scores.csv`.
 
-What I produce
+## What I produce
 
 - `output/features/customer_features.csv`: customer-level metrics for phishing exposure, interactions, suspicious login events, orders, and incidents
 - `output/anomalies/login_anomalies.csv`: anomaly scores and flags for login events
 - `output/scores/customer_risk_scores.csv`: prototype risk scores and qualitative buckets
 
-How to interpret the outputs
+## How to interpret the outputs
 
 I use `output/features/customer_features.csv` as the foundation for scoring and analysis. It shows how message volume, click behavior, suspicious logins, and order outcomes combine into risk signal.
 
