@@ -82,6 +82,3 @@ I use `output/features/customer_features.csv` as the foundation for scoring and 
 The `risk_scoring.py` result is a prototype, not a production model. I built it to be understandable and easy to explain.
 
 The portfolio HTML is the final presentation layer: it is intended to make the core insights readable and to connect the visuals back to the underlying SQL and data.
-
-![alt text](dashboards/Dashboard_Screenshots/attack_volume_incidents.png) !
-[alt text](dashboards/Dashboard_Screenshots/country_profile.png) ![alt text](dashboards/Dashboard_Screenshots/incident_rate_by_risk.png)
