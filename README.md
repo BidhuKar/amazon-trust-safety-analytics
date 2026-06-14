@@ -53,7 +53,7 @@ From the repo root, I recommend these steps:
 
 4) View the portfolio page:
 
-   - **Direct link:** [Open portfolio page](https://bidhukar.github.io/amazon-trust-safety-analytics/)
+   - **Direct link:** [Open portfolio page](https://bidhukar.github.io/amazon-trust-safety-analytics/reports/trust-safety-portfolio-magical.html#recommendations)
    - **Or run a local server and navigate to** `http://localhost:8000/reports/trust-safety-portfolio-magical.html`:
    
    python -m http.server 8000
