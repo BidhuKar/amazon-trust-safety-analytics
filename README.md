@@ -37,19 +37,19 @@ From the repo root, I recommend these steps:
 
 1) Create and activate a Python virtual environment:
 
-   python -m venv .venv
-   source .venv/bin/activate
+   # python -m venv .venv
+   # source .venv/bin/activate
 
 2) Install the dependencies:
 
-   python -m pip install --upgrade pip
-   python -m pip install -r requirements.txt
+   # python -m pip install --upgrade pip
+   # python -m pip install -r requirements.txt
 
 3) Run the pipeline:
 
-   python python/data_preparation.py
-   python python/anomaly_detection.py
-   python python/risk_scoring.py
+   # python python/data_preparation.py
+   # python python/anomaly_detection.py
+   # python python/risk_scoring.py
 
 4) View the portfolio page:
 
@@ -60,7 +60,7 @@ From the repo root, I recommend these steps:
 
 5) Run the notebooks for the full walkthrough:
 
-   python -m notebook
+   # python -m notebook
    # then open notebooks/01_data_pipeline_walkthrough.ipynb and notebooks/02_analysis_and_visualization.ipynb
 
 ## What the scripts do
