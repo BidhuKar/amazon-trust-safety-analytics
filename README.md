@@ -51,10 +51,12 @@ From the repo root, I recommend these steps:
    python python/anomaly_detection.py
    python python/risk_scoring.py
 
-4) Preview the portfolio page:
+4) View the portfolio page:
 
+   - **Direct link:** [Open portfolio page](reports/trust-safety-portfolio-magical.html)
+   - **Or run a local server and navigate to** `http://localhost:8000/reports/trust-safety-portfolio-magical.html`:
+   
    python -m http.server 8000
-   # then open http://localhost:8000/reports/trust-safety-portfolio-magical.html
 
 5) Run the notebooks for the full walkthrough:
 
